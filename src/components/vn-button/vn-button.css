@@ -1,0 +1,15 @@
+.vn-button{
+    --vn-button-color: var(--theme-color);
+    background-color: var(--vn-button-color); 
+    border-color: var(--vn-button-color);
+    
+}
+.vn-button.size-1{
+    height: 1rem;
+}
+.vn-button.size-2{
+    height: 2rem;
+}
+.vn-button.size-3{
+    height: 3rem;
+}
