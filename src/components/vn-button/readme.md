@@ -7,10 +7,12 @@
 
 ## Properties
 
-| Property  | Attribute  | Description | Type     | Default         |
-| --------- | ---------- | ----------- | -------- | --------------- |
-| `boxSize` | `box-size` |             | `string` | `'HI'`          |
-| `test`    | `test`     | A test prop | `string` | `'Hello World'` |
+| Property  | Attribute  | Description | Type     | Default          |
+| --------- | ---------- | ----------- | -------- | ---------------- |
+| `boxSize` | `box-size` |             | `string` | `'HI'`           |
+| `color`   | `color`    |             | `string` | `'black'`        |
+| `test`    | `test`     | A test prop | `string` | `'Hello World'`  |
+| `value`   | `value`    |             | `string` | `'Hello, World'` |
 
 
 ----------------------------------------------

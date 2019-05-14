@@ -1,9 +1,12 @@
 /* Variable that can be manipulated by theme go into global scope */
+
+
 /* https://stenciljs.com/docs/config#globalstyle */
+
 :root {
-  --theme-bgcolor: #50F6C1;
-  --theme-color: #E5FEF6;
-   --theme2-color: #FAE9C1;
-   --theme2-bgcolor: #FFFCF6;
-   --theme-padding: 0;
+    --theme-color: #50F6C1;
+    --theme-bgcolor: #E5FEF6;
+    --theme2-color: #FAE9C1;
+    --theme2-bgcolor: #FFFCF6;
+    --theme-padding: 0;
 }

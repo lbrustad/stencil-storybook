@@ -56,17 +56,21 @@ export namespace Components {
 
   interface VnButton {
     'boxSize': string;
+    'color': string;
     /**
     * A test prop
     */
     'test': string;
+    'value': string;
   }
   interface VnButtonAttributes extends StencilHTMLAttributes {
     'boxSize'?: string;
+    'color'?: string;
     /**
     * A test prop
     */
     'test'?: string;
+    'value'?: string;
   }
 }
 

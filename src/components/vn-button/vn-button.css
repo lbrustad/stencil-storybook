@@ -13,3 +13,15 @@
 .vn-button.size-3{
     height: 3rem;
 }
+
+.vn-button.vn-color-default {
+    color: var(--theme-color)
+}
+
+.vn-button.vn-color-grey {
+    color: grey;
+}
+
+.vn-button.vn-color-red {
+    color: red;
+}
