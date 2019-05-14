@@ -53,17 +53,34 @@ export namespace Components {
     */
     'test'?: string;
   }
+
+  interface VnButton {
+    'color': string;
+    /**
+    * A test prop
+    */
+    'value': string;
+  }
+  interface VnButtonAttributes extends StencilHTMLAttributes {
+    'color'?: string;
+    /**
+    * A test prop
+    */
+    'value'?: string;
+  }
 }
 
 declare global {
   interface StencilElementInterfaces {
     'MyComponent': Components.MyComponent;
     'TestButton': Components.TestButton;
+    'VnButton': Components.VnButton;
   }
 
   interface StencilIntrinsicElements {
     'my-component': Components.MyComponentAttributes;
     'test-button': Components.TestButtonAttributes;
+    'vn-button': Components.VnButtonAttributes;
   }
 
 
@@ -79,14 +96,22 @@ declare global {
     new (): HTMLTestButtonElement;
   };
 
+  interface HTMLVnButtonElement extends Components.VnButton, HTMLStencilElement {}
+  var HTMLVnButtonElement: {
+    prototype: HTMLVnButtonElement;
+    new (): HTMLVnButtonElement;
+  };
+
   interface HTMLElementTagNameMap {
     'my-component': HTMLMyComponentElement
     'test-button': HTMLTestButtonElement
+    'vn-button': HTMLVnButtonElement
   }
 
   interface ElementTagNameMap {
     'my-component': HTMLMyComponentElement;
     'test-button': HTMLTestButtonElement;
+    'vn-button': HTMLVnButtonElement;
   }
 
 
