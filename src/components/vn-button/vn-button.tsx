@@ -9,24 +9,24 @@ export class VnButton {
   /**
    * A test prop
    */
-  @Prop() color: string = 'black';
-  @Prop() boxSize: string = '1' ;
+  @Prop() color: string = 'p2';
+  @Prop() boxSize: string = 'medium' ;
+  @Prop() href: string = '#' ;
 
   hostData() {
-    let colors = ['black', 'grey', 'red'];
+    let colors = ['p1', 'p2', 'p3'];
     if (!colors.includes(this.color)) this.color = 'black';
     return {};
   }
 
   render() {
-    let boxSize = parseInt(this.boxSize);
-    let sizes = ['small', 'medium', 'big', 'giant'];
-    return (
-      <a class={`vn-button vn-color-` + this.color}>
-        <span class={`vn-button size-` + sizes[boxSize - 1]}>
+ 
+    return ([
+      <a href={this.href} 
+      class={`btn color-` + this.color + ` size-` + this.boxSize}>
           <slot />
-        </span>
+        
       </a>
-    );
+    ]);
   }
 }

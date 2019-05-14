@@ -1,35 +1,32 @@
-.vn-button {
-    --vn-button-color: var(--theme-color);
+
+.btn {
     background-color: var(--vn-button-color);
-    border-color: var(--vn-button-color);
-    
+    color: var(--theme-text-color);
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding: 10px 20px ;
+    text-decoration: none;
+    text-transform: uppercase;
+}    
+
+
+.color-p1 {
+    background-color: var(--theme-p1)
 }
 
-.vn-button.size-small {
-    min-width: 1.3rem;
+.color-p2 {
+    background-color: var(--theme-p2)
 }
 
-.vn-button.size-medium {
-    min-width: 2.6rem;
+.color-p3 {
+    background-color: var(--theme-p3)
 }
 
-.vn-button.size-big {
-    height: 4rem;
+.size-small {
+    padding: 5px 10px ;
 }
 
-.vn-button.size-giant {
-    height: 6rem;
-}
-
-.vn-button.vn-color-default {
-    color: var(--theme-color)
-}
-
-.vn-button.vn-color-grey {
-    color: grey;
-    margin: 10px;
-}
-
-.vn-button.vn-color-red {
-    color: red;
+.size-large {
+    padding: 20px 30px ;
 }

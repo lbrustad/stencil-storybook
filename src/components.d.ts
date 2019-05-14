@@ -60,6 +60,7 @@ export namespace Components {
     * A test prop
     */
     'color': string;
+    'href': string;
   }
   interface VnButtonAttributes extends StencilHTMLAttributes {
     'boxSize'?: string;
@@ -67,6 +68,7 @@ export namespace Components {
     * A test prop
     */
     'color'?: string;
+    'href'?: string;
   }
 }
 

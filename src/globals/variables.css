@@ -4,9 +4,9 @@
 /* https://stenciljs.com/docs/config#globalstyle */
 
 :root {
-    --theme-color: #50F6C1;
-    --theme-bgcolor: #E5FEF6;
-    --theme2-color: #FAE9C1;
-    --theme2-bgcolor: #FFFCF6;
+    --theme-p1: #27777A;
+    --theme-p2: #50F6C1;
+    --theme-p3: #FAE9C1;
+    --theme-text-color: rgba(0,0,0,0.87);
     --theme-padding: 0;
 }
