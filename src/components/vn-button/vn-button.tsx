@@ -9,10 +9,8 @@ export class VnButton {
   /**
    * A test prop
    */
-  @Prop() test: string = 'Hello World';
-  @Prop() value: string = 'Hello, World';
   @Prop() color: string = 'black';
-  @Prop() boxSize: string = 'HI' ;
+  @Prop() boxSize: string = '1' ;
 
   hostData() {
     let colors = ['black', 'grey', 'red'];
@@ -20,9 +18,9 @@ export class VnButton {
     return {};
   }
 
-  render() { 
-    console.log(this.boxSize)
-    
-    return <a class={`vn-button size-` + this.boxSize + ` vn-color-` + this.color}><slot /></a>;
+  render() {
+    let boxSize = parseInt(this.boxSize);
+    let sizes = ['small', 'medium', 'big', 'giant'];
+    return <a class={`vn-button size-` + sizes[boxSize - 1] + ` vn-color-` + this.color}><slot /></a>;
   }
 }
