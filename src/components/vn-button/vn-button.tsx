@@ -21,6 +21,12 @@ export class VnButton {
   render() {
     let boxSize = parseInt(this.boxSize);
     let sizes = ['small', 'medium', 'big', 'giant'];
-    return <a class={`vn-button size-` + sizes[boxSize - 1] + ` vn-color-` + this.color}><slot /></a>;
+    return (
+      <a class={`vn-button vn-color-` + this.color}>
+        <span class={`vn-button size-` + sizes[boxSize - 1]}>
+          <slot />
+        </span>
+      </a>
+    );
   }
 }
