@@ -17,7 +17,7 @@
     line-height: 16px;
 
 .size-large
-    padding: 25px 30px;
+    padding: 21px 31px;
     font-size: 16.77px;
     text-transform: none;
     line-height: 28px;
@@ -28,20 +28,27 @@
 .color-p2
     background-color: var(--theme-p2)
 
-.color-p3
+.color-p3 {
     background-color: var(--theme-p3)
-    &:hover
+    &:hover {
         border: 3px solid #ECBD60
-        padding: 22px 27px;
-    // &:focus
-        //
+        padding: 18px 28px;
+    }
+    &:focus {
+        border: 3px solid #ECBD60
+        padding: 18px 28px;
+    }
+}
 
-.color-p4
+.color-p4 {
     background-color: var(--theme-p4)
     opacity .7
     padding: 4px 11px
-    &:hover
+    &:hover {
         text-decoration: var(--theme-text-color) underline;
-    &:focus
+    }
+    &:focus {
         background-color: #FFFFFF
         box-shadow: 0 0 1px 2px #27777A
+    }
+}
