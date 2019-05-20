@@ -27,15 +27,18 @@
 }
 
 .size-small {
-    padding: 5px 15px ;
+    padding: 15px 30px; 
     font-size: 14.68px; 
-    font-weight: 700;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    line-height: 16px;
+    /* height: 13px;
+    width: 168.18px; */
 }
 
 .size-large {
-    padding: 22px 20px ;
+    padding: 25px 30px ;
     font-size: 16.77px;
-    font-weight: 400;
     text-transform: none; 
-    opacity: 0.7;
+    line-height: 28px;
 }
