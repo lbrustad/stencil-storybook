@@ -4,6 +4,7 @@
  */
 // Needed for type issue with TS for protocol option in devServer
 import { Config } from '@stencil/core';
+import { stylus } from '@stencil/stylus';
 import kebabCase from 'lodash.kebabcase';
 
 type Protocol = 'http' | 'https';
@@ -87,5 +88,11 @@ export const config: Config = {
       buildDir
     },
   ],
-  globalStyle: 'src/globals/variables.css',
+  globalStyle: 'src/globals/variables.styl',
+  copy: [
+    { src: 'fonts' }
+  ],
+  plugins: [
+    stylus()
+  ]
 };

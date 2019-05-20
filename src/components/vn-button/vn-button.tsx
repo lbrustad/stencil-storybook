@@ -1,35 +1,33 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop } from "@stencil/core";
 
 @Component({
-  tag: 'vn-button',
-  styleUrl: 'vn-button.css',
-  shadow: true,
+  tag: "vn-button",
+  styleUrl: "vn-button.styl",
+  shadow: true
 })
-
 export class VnButton {
   /**
    * A test prop
    */
-  @Prop() color: string = 'p2';
-  @Prop() boxSize: string = 'medium';
-  @Prop() href: string = '#';
+  @Prop() color: string = "p2";
+  @Prop() boxSize: string = "medium";
+  @Prop() href: string = "#";
   @Prop() bold: string = "false";
 
-  hostData() {
-    let colors = ['p1', 'p2', 'p3', 'p4'];
-    if (!colors.includes(this.color)) this.color = 'black';
-    return {};
-  }
-
   render() {
- 
-    return ([
-      <a href={this.href} 
-          class={`btn color-` + this.color + 
-            ` size-` + this.boxSize +
-            (this.bold == 'true' ? ' bold' : '')}>
-          <slot />
+    return [
+      <a
+        href={this.href}
+        class={
+          `btn color-` +
+          this.color +
+          ` size-` +
+          this.boxSize +
+          (this.bold == "true" ? " bold" : "")
+        }
+      >
+        <slot />
       </a>
-    ]);
+    ];
   }
 }
