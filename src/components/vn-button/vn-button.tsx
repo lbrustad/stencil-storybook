@@ -5,16 +5,18 @@ import { Component, Prop } from '@stencil/core';
   styleUrl: 'vn-button.css',
   shadow: true,
 })
+
 export class VnButton {
   /**
    * A test prop
    */
   @Prop() color: string = 'p2';
-  @Prop() boxSize: string = 'medium' ;
-  @Prop() href: string = '#' ;
+  @Prop() boxSize: string = 'medium';
+  @Prop() href: string = '#';
+  @Prop() bold: string = "false";
 
   hostData() {
-    let colors = ['p1', 'p2', 'p3'];
+    let colors = ['p1', 'p2', 'p3', 'p4'];
     if (!colors.includes(this.color)) this.color = 'black';
     return {};
   }
@@ -23,9 +25,10 @@ export class VnButton {
  
     return ([
       <a href={this.href} 
-      class={`btn color-` + this.color + ` size-` + this.boxSize}>
+          class={`btn color-` + this.color + 
+            ` size-` + this.boxSize +
+            (this.bold == 'true' ? ' bold' : '')}>
           <slot />
-        
       </a>
     ]);
   }

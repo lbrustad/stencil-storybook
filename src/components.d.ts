@@ -55,6 +55,7 @@ export namespace Components {
   }
 
   interface VnButton {
+    'bold': string;
     'boxSize': string;
     /**
     * A test prop
@@ -63,6 +64,7 @@ export namespace Components {
     'href': string;
   }
   interface VnButtonAttributes extends StencilHTMLAttributes {
+    'bold'?: string;
     'boxSize'?: string;
     /**
     * A test prop
