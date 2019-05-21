@@ -1,15 +1,17 @@
-// Add addon registers here 
+// Add addon registers here
+import 'storybook-readme/register'
+//import registerWithPanelTitle from 'storybook-readme/registerWithPanelTitle';
 
-
+//registerWithPanelTitle('Docs');
 
 // ------ Stencil JS Dev Server ------
-// DO NOT DELETE 
+// DO NOT DELETE
 /**
  * Adding environment to the window object.
  * Needed for socket communication.
  */
 import { stencil } from '../package.json';
-const {host, port, protocol} = stencil;
+const { host, port, protocol } = stencil;
 window.STENCIL_DEV_HOST = host;
 window.STENCIL_DEV_PORT = port;
 window.STENCIL_DEV_PROTOCOL = protocol;

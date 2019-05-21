@@ -1,9 +1,8 @@
 import { storiesOf } from '@storybook/html';
-//import ButtonReadme from './readme.md';
 
 let btns = {
-    'Large button': '<vn-button box-size="large">Vis formål</vn-button>',
-    'Small button': '<vn-button color="p4" box-size="large">Sitemap</vn-button>'
+    'Large label': '<vn-content-label box-size="small">Dette er en kjerneside</vn-content-label>',
+    'Small label': '<vn-content-label box-size="small">KJ</vn-content-label>'
 };
 
 let arr = [];
@@ -11,7 +10,7 @@ for (let key in btns) {
     arr.push(btns[key]);
 }
 
-const stories = storiesOf('Components/VnButton', module)
+const stories = storiesOf('Components/VnContentLabel', module)
     .add(
         'All Items',
         () => arr.join('<br /><br /><br />')

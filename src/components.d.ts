@@ -72,6 +72,21 @@ export namespace Components {
     'color'?: string;
     'href'?: string;
   }
+
+  interface VnContentLabel {
+    'boxSize': string;
+    /**
+    * A test prop
+    */
+    'color': string;
+  }
+  interface VnContentLabelAttributes extends StencilHTMLAttributes {
+    'boxSize'?: string;
+    /**
+    * A test prop
+    */
+    'color'?: string;
+  }
 }
 
 declare global {
@@ -79,12 +94,14 @@ declare global {
     'MyComponent': Components.MyComponent;
     'TestButton': Components.TestButton;
     'VnButton': Components.VnButton;
+    'VnContentLabel': Components.VnContentLabel;
   }
 
   interface StencilIntrinsicElements {
     'my-component': Components.MyComponentAttributes;
     'test-button': Components.TestButtonAttributes;
     'vn-button': Components.VnButtonAttributes;
+    'vn-content-label': Components.VnContentLabelAttributes;
   }
 
 
@@ -106,16 +123,24 @@ declare global {
     new (): HTMLVnButtonElement;
   };
 
+  interface HTMLVnContentLabelElement extends Components.VnContentLabel, HTMLStencilElement {}
+  var HTMLVnContentLabelElement: {
+    prototype: HTMLVnContentLabelElement;
+    new (): HTMLVnContentLabelElement;
+  };
+
   interface HTMLElementTagNameMap {
     'my-component': HTMLMyComponentElement
     'test-button': HTMLTestButtonElement
     'vn-button': HTMLVnButtonElement
+    'vn-content-label': HTMLVnContentLabelElement
   }
 
   interface ElementTagNameMap {
     'my-component': HTMLMyComponentElement;
     'test-button': HTMLTestButtonElement;
     'vn-button': HTMLVnButtonElement;
+    'vn-content-label': HTMLVnContentLabelElement;
   }
 
 

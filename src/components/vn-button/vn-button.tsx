@@ -9,7 +9,7 @@ export class VnButton {
   /**
    * A test prop
    */
-  @Prop() color: string = "p2";
+  @Prop() color: string = "p3";
   @Prop() boxSize: string = "medium";
   @Prop() href: string = "#";
   @Prop() bold: string = "false";

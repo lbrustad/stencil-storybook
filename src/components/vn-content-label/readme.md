@@ -1,4 +1,4 @@
-# vn-button
+# vn-content-label
 
 
 
@@ -9,10 +9,8 @@
 
 | Property  | Attribute  | Description | Type     | Default    |
 | --------- | ---------- | ----------- | -------- | ---------- |
-| `bold`    | `bold`     |             | `string` | `"false"`  |
 | `boxSize` | `box-size` |             | `string` | `"medium"` |
-| `color`   | `color`    | A test prop | `string` | `"p3"`     |
-| `href`    | `href`     |             | `string` | `"#"`      |
+| `color`   | `color`    | A test prop | `string` | `"p2"`     |
 
 
 ----------------------------------------------
