@@ -60,6 +60,21 @@ export namespace Components {
     'href'?: string;
   }
 
+  interface VnColorBlock {
+    'bg': string;
+    'p': string;
+    'pl': string;
+    'pt': string;
+    'type': string;
+  }
+  interface VnColorBlockAttributes extends StencilHTMLAttributes {
+    'bg'?: string;
+    'p'?: string;
+    'pl'?: string;
+    'pt'?: string;
+    'type'?: string;
+  }
+
   interface VnContentLabel {
     'boxSize': string;
     /**
@@ -123,6 +138,7 @@ declare global {
   interface StencilElementInterfaces {
     'MyComponent': Components.MyComponent;
     'VnButton': Components.VnButton;
+    'VnColorBlock': Components.VnColorBlock;
     'VnContentLabel': Components.VnContentLabel;
     'VnContentTitle': Components.VnContentTitle;
     'VnLenker': Components.VnLenker;
@@ -132,6 +148,7 @@ declare global {
   interface StencilIntrinsicElements {
     'my-component': Components.MyComponentAttributes;
     'vn-button': Components.VnButtonAttributes;
+    'vn-color-block': Components.VnColorBlockAttributes;
     'vn-content-label': Components.VnContentLabelAttributes;
     'vn-content-title': Components.VnContentTitleAttributes;
     'vn-lenker': Components.VnLenkerAttributes;
@@ -149,6 +166,12 @@ declare global {
   var HTMLVnButtonElement: {
     prototype: HTMLVnButtonElement;
     new (): HTMLVnButtonElement;
+  };
+
+  interface HTMLVnColorBlockElement extends Components.VnColorBlock, HTMLStencilElement {}
+  var HTMLVnColorBlockElement: {
+    prototype: HTMLVnColorBlockElement;
+    new (): HTMLVnColorBlockElement;
   };
 
   interface HTMLVnContentLabelElement extends Components.VnContentLabel, HTMLStencilElement {}
@@ -178,6 +201,7 @@ declare global {
   interface HTMLElementTagNameMap {
     'my-component': HTMLMyComponentElement
     'vn-button': HTMLVnButtonElement
+    'vn-color-block': HTMLVnColorBlockElement
     'vn-content-label': HTMLVnContentLabelElement
     'vn-content-title': HTMLVnContentTitleElement
     'vn-lenker': HTMLVnLenkerElement
@@ -187,6 +211,7 @@ declare global {
   interface ElementTagNameMap {
     'my-component': HTMLMyComponentElement;
     'vn-button': HTMLVnButtonElement;
+    'vn-color-block': HTMLVnColorBlockElement;
     'vn-content-label': HTMLVnContentLabelElement;
     'vn-content-title': HTMLVnContentTitleElement;
     'vn-lenker': HTMLVnLenkerElement;
