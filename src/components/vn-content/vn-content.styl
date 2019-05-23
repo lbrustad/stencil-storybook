@@ -1,43 +1,46 @@
+@import '../../globals/stylus-methods/index.styl'
+
 $defaults
   color var(--theme-text-color)
+  font-family: var(--theme-font)
+  font-weight: 400
+  letter-spacing: 0.25px
 
 h1
   @extend $defaults
   font-family: var(--theme-font-light)
-  font-weight: 300;
-  font-size: 6.287em;
+  font-weight: 300
+  font-size: em(100.63)
+  letter-spacing: -1.5px
+  line-height: em(120, 100.63)
 
 h2
   @extend $defaults
-  font-family: var(--theme-font)
-  font-size: 67.16px;
-  font-weight: 500;
+  font-size: em(67.16)
+  font-weight: 500
+  letter-spacing: -0.5px
+  line-height: em(80, 67.16)
 
 h3
   @extend $defaults
-  font-family: var(--theme-font)
-  font-size: 50.32px;
-  font-weight: 400
+  font-size: em(50.32)
+  letter-spacing: normal
+  line-height: em(61, 50.32)
 
-h4 
+h4
   @extend $defaults
-  font-family: var(--theme-font)
-  font-size: 35.64px;
-  font-weight: 400
-
+  font-size: em(35.64)
+  line-height: em(43, 35.64)
 
 h5
   @extend $defaults
-  font-family: var(--theme-font)
-  font-size: 25.16px;
-  font-weight: 400
+  font-size: em(25.16)
+  letter-spacing: normal
+  line-height: em(30, 25.16)
 
-
-h6 
+h6
   @extend $defaults
   font-family: var(--theme-font-medium)
-  font-size: 20.97px;
+  font-size: em(20.97)
   font-weight: 500
-
-
-
+  line-height: em(25, 20.97)
