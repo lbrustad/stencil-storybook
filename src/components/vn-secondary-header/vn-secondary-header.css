@@ -1,19 +1,7 @@
-.vn-secondary-header{
-    --vn-secondary-header-color: var(--theme-color);
-    color: var(--vn-secondary-header-color); 
-}
-
 .header {
-    font-family: apercu;
+    font-family: var(--theme-font);
     background-color: var(--theme-p2-15-opacity);
     padding: 29px 28px;
     font-weight: bold;
-    
     letter-spacing: 0.25px;
 }
-
-
-
-
-
-

@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component } from '@stencil/core';
 
 @Component({
   tag: 'vn-secondary-header',
@@ -6,16 +6,10 @@ import { Component, Prop } from '@stencil/core';
   shadow: true,
 })
 export class VnSecondaryHeader {
- 
-  @Prop() color: string = "p2";
-  @Prop() test: string = 'Hello World';
-  @Prop() header!: string ;
-
   render() {
-    return <div 
-    class="header">{this.header}
-
-    <slot />
+    return <div
+    class="header">
+      <slot />
     </div>;
   }
 }

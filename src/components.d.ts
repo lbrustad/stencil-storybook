@@ -105,6 +105,19 @@ export namespace Components {
     'title'?: string;
   }
 
+  interface VnContent {
+    /**
+    * A test prop
+    */
+    'test': string;
+  }
+  interface VnContentAttributes extends StencilHTMLAttributes {
+    /**
+    * A test prop
+    */
+    'test'?: string;
+  }
+
   interface VnLenker {
     'hasHover': string;
     'href': string;
@@ -122,16 +135,8 @@ export namespace Components {
     'text': string;
   }
 
-  interface VnSecondaryHeader {
-    'color': string;
-    'header': string;
-    'test': string;
-  }
-  interface VnSecondaryHeaderAttributes extends StencilHTMLAttributes {
-    'color'?: string;
-    'header': string;
-    'test'?: string;
-  }
+  interface VnSecondaryHeader {}
+  interface VnSecondaryHeaderAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
@@ -141,6 +146,7 @@ declare global {
     'VnColorBlock': Components.VnColorBlock;
     'VnContentLabel': Components.VnContentLabel;
     'VnContentTitle': Components.VnContentTitle;
+    'VnContent': Components.VnContent;
     'VnLenker': Components.VnLenker;
     'VnSecondaryHeader': Components.VnSecondaryHeader;
   }
@@ -151,6 +157,7 @@ declare global {
     'vn-color-block': Components.VnColorBlockAttributes;
     'vn-content-label': Components.VnContentLabelAttributes;
     'vn-content-title': Components.VnContentTitleAttributes;
+    'vn-content': Components.VnContentAttributes;
     'vn-lenker': Components.VnLenkerAttributes;
     'vn-secondary-header': Components.VnSecondaryHeaderAttributes;
   }
@@ -186,6 +193,12 @@ declare global {
     new (): HTMLVnContentTitleElement;
   };
 
+  interface HTMLVnContentElement extends Components.VnContent, HTMLStencilElement {}
+  var HTMLVnContentElement: {
+    prototype: HTMLVnContentElement;
+    new (): HTMLVnContentElement;
+  };
+
   interface HTMLVnLenkerElement extends Components.VnLenker, HTMLStencilElement {}
   var HTMLVnLenkerElement: {
     prototype: HTMLVnLenkerElement;
@@ -204,6 +217,7 @@ declare global {
     'vn-color-block': HTMLVnColorBlockElement
     'vn-content-label': HTMLVnContentLabelElement
     'vn-content-title': HTMLVnContentTitleElement
+    'vn-content': HTMLVnContentElement
     'vn-lenker': HTMLVnLenkerElement
     'vn-secondary-header': HTMLVnSecondaryHeaderElement
   }
@@ -214,6 +228,7 @@ declare global {
     'vn-color-block': HTMLVnColorBlockElement;
     'vn-content-label': HTMLVnContentLabelElement;
     'vn-content-title': HTMLVnContentTitleElement;
+    'vn-content': HTMLVnContentElement;
     'vn-lenker': HTMLVnLenkerElement;
     'vn-secondary-header': HTMLVnSecondaryHeaderElement;
   }
