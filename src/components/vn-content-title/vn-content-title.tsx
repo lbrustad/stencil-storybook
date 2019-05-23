@@ -10,9 +10,16 @@ export class VnContentTitle {
    * A test prop
    */
   @Prop() test: string = 'Hello World';
-  @Prop() title!: string ;
+  @Prop() title: string = "" ;
 
   render() {
-    return <div class="title">{this.title}</div>;
+    return <div class="title">
+    
+    
+          <slot />
+    </div>;
+
+  
+    
   }
 }

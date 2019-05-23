@@ -41,19 +41,6 @@ export namespace Components {
     'middle'?: string;
   }
 
-  interface TestButton {
-    /**
-    * A test prop
-    */
-    'test': string;
-  }
-  interface TestButtonAttributes extends StencilHTMLAttributes {
-    /**
-    * A test prop
-    */
-    'test'?: string;
-  }
-
   interface VnButton {
     'bold': string;
     'boxSize': string;
@@ -100,25 +87,55 @@ export namespace Components {
     * A test prop
     */
     'test'?: string;
-    'title': string;
+    'title'?: string;
+  }
+
+  interface VnLenker {
+    'hasHover': string;
+    'href': string;
+    /**
+    * A test prop
+    */
+    'text': string;
+  }
+  interface VnLenkerAttributes extends StencilHTMLAttributes {
+    'hasHover'?: string;
+    'href'?: string;
+    /**
+    * A test prop
+    */
+    'text': string;
+  }
+
+  interface VnSecondaryHeader {
+    'color': string;
+    'header': string;
+    'test': string;
+  }
+  interface VnSecondaryHeaderAttributes extends StencilHTMLAttributes {
+    'color'?: string;
+    'header': string;
+    'test'?: string;
   }
 }
 
 declare global {
   interface StencilElementInterfaces {
     'MyComponent': Components.MyComponent;
-    'TestButton': Components.TestButton;
     'VnButton': Components.VnButton;
     'VnContentLabel': Components.VnContentLabel;
     'VnContentTitle': Components.VnContentTitle;
+    'VnLenker': Components.VnLenker;
+    'VnSecondaryHeader': Components.VnSecondaryHeader;
   }
 
   interface StencilIntrinsicElements {
     'my-component': Components.MyComponentAttributes;
-    'test-button': Components.TestButtonAttributes;
     'vn-button': Components.VnButtonAttributes;
     'vn-content-label': Components.VnContentLabelAttributes;
     'vn-content-title': Components.VnContentTitleAttributes;
+    'vn-lenker': Components.VnLenkerAttributes;
+    'vn-secondary-header': Components.VnSecondaryHeaderAttributes;
   }
 
 
@@ -126,12 +143,6 @@ declare global {
   var HTMLMyComponentElement: {
     prototype: HTMLMyComponentElement;
     new (): HTMLMyComponentElement;
-  };
-
-  interface HTMLTestButtonElement extends Components.TestButton, HTMLStencilElement {}
-  var HTMLTestButtonElement: {
-    prototype: HTMLTestButtonElement;
-    new (): HTMLTestButtonElement;
   };
 
   interface HTMLVnButtonElement extends Components.VnButton, HTMLStencilElement {}
@@ -152,20 +163,34 @@ declare global {
     new (): HTMLVnContentTitleElement;
   };
 
+  interface HTMLVnLenkerElement extends Components.VnLenker, HTMLStencilElement {}
+  var HTMLVnLenkerElement: {
+    prototype: HTMLVnLenkerElement;
+    new (): HTMLVnLenkerElement;
+  };
+
+  interface HTMLVnSecondaryHeaderElement extends Components.VnSecondaryHeader, HTMLStencilElement {}
+  var HTMLVnSecondaryHeaderElement: {
+    prototype: HTMLVnSecondaryHeaderElement;
+    new (): HTMLVnSecondaryHeaderElement;
+  };
+
   interface HTMLElementTagNameMap {
     'my-component': HTMLMyComponentElement
-    'test-button': HTMLTestButtonElement
     'vn-button': HTMLVnButtonElement
     'vn-content-label': HTMLVnContentLabelElement
     'vn-content-title': HTMLVnContentTitleElement
+    'vn-lenker': HTMLVnLenkerElement
+    'vn-secondary-header': HTMLVnSecondaryHeaderElement
   }
 
   interface ElementTagNameMap {
     'my-component': HTMLMyComponentElement;
-    'test-button': HTMLTestButtonElement;
     'vn-button': HTMLVnButtonElement;
     'vn-content-label': HTMLVnContentLabelElement;
     'vn-content-title': HTMLVnContentTitleElement;
+    'vn-lenker': HTMLVnLenkerElement;
+    'vn-secondary-header': HTMLVnSecondaryHeaderElement;
   }
 
 

@@ -11,7 +11,7 @@ for (let key in btns) {
     arr.push(btns[key]);
 }
 
-const stories = storiesOf('Components/VnButton', module)
+const stories = storiesOf('Components/Ikoner, knapper & labels/VnButton', module)
     .add(
         'All Items',
         () => arr.join('<br /><br /><br />')
