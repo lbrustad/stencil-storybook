@@ -7,9 +7,10 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default         |
-| -------- | --------- | ----------- | -------- | --------------- |
-| `test`   | `test`    | A test prop | `string` | `'Hello World'` |
+| Property    | Attribute    | Description | Type     | Default         |
+| ----------- | ------------ | ----------- | -------- | --------------- |
+| `className` | `class-name` |             | `string` | `undefined`     |
+| `test`      | `test`       | A test prop | `string` | `'Hello World'` |
 
 
 ----------------------------------------------

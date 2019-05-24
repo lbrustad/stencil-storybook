@@ -106,12 +106,14 @@ export namespace Components {
   }
 
   interface VnContent {
+    'className': string;
     /**
     * A test prop
     */
     'test': string;
   }
   interface VnContentAttributes extends StencilHTMLAttributes {
+    'className'?: string;
     /**
     * A test prop
     */
@@ -137,6 +139,32 @@ export namespace Components {
 
   interface VnSecondaryHeader {}
   interface VnSecondaryHeaderAttributes extends StencilHTMLAttributes {}
+
+  interface VnSize {
+    /**
+    * A test prop
+    */
+    'size': string;
+  }
+  interface VnSizeAttributes extends StencilHTMLAttributes {
+    /**
+    * A test prop
+    */
+    'size'?: string;
+  }
+
+  interface VnText {
+    /**
+    * A test prop
+    */
+    'type': string;
+  }
+  interface VnTextAttributes extends StencilHTMLAttributes {
+    /**
+    * A test prop
+    */
+    'type'?: string;
+  }
 }
 
 declare global {
@@ -149,6 +177,8 @@ declare global {
     'VnContent': Components.VnContent;
     'VnLenker': Components.VnLenker;
     'VnSecondaryHeader': Components.VnSecondaryHeader;
+    'VnSize': Components.VnSize;
+    'VnText': Components.VnText;
   }
 
   interface StencilIntrinsicElements {
@@ -160,6 +190,8 @@ declare global {
     'vn-content': Components.VnContentAttributes;
     'vn-lenker': Components.VnLenkerAttributes;
     'vn-secondary-header': Components.VnSecondaryHeaderAttributes;
+    'vn-size': Components.VnSizeAttributes;
+    'vn-text': Components.VnTextAttributes;
   }
 
 
@@ -211,6 +243,18 @@ declare global {
     new (): HTMLVnSecondaryHeaderElement;
   };
 
+  interface HTMLVnSizeElement extends Components.VnSize, HTMLStencilElement {}
+  var HTMLVnSizeElement: {
+    prototype: HTMLVnSizeElement;
+    new (): HTMLVnSizeElement;
+  };
+
+  interface HTMLVnTextElement extends Components.VnText, HTMLStencilElement {}
+  var HTMLVnTextElement: {
+    prototype: HTMLVnTextElement;
+    new (): HTMLVnTextElement;
+  };
+
   interface HTMLElementTagNameMap {
     'my-component': HTMLMyComponentElement
     'vn-button': HTMLVnButtonElement
@@ -220,6 +264,8 @@ declare global {
     'vn-content': HTMLVnContentElement
     'vn-lenker': HTMLVnLenkerElement
     'vn-secondary-header': HTMLVnSecondaryHeaderElement
+    'vn-size': HTMLVnSizeElement
+    'vn-text': HTMLVnTextElement
   }
 
   interface ElementTagNameMap {
@@ -231,6 +277,8 @@ declare global {
     'vn-content': HTMLVnContentElement;
     'vn-lenker': HTMLVnLenkerElement;
     'vn-secondary-header': HTMLVnSecondaryHeaderElement;
+    'vn-size': HTMLVnSizeElement;
+    'vn-text': HTMLVnTextElement;
   }
 
 

@@ -6,8 +6,12 @@ $defaults
   font-weight: 400
   letter-spacing: 0.25px
 
+$margin
+  margin-bottom: em(30)
+
 h1
   @extend $defaults
+  @extend $margin
   font-family: var(--theme-font-light)
   font-weight: 300
   font-size: em(100.63)
@@ -16,6 +20,7 @@ h1
 
 h2
   @extend $defaults
+  @extend $margin
   font-size: em(67.16)
   font-weight: 500
   letter-spacing: -0.5px
@@ -23,35 +28,41 @@ h2
 
 h3
   @extend $defaults
+  @extend $margin
   font-size: em(50.32)
   letter-spacing: normal
   line-height: 61/50.32
 
 h4
   @extend $defaults
+  @extend $margin
   font-size: em(35.64)
   line-height: 43/35.64
 
 h5
   @extend $defaults
+  @extend $margin
   font-size: em(25.16)
   letter-spacing: normal
   line-height: 30/25.16
 
 h6
   @extend $defaults
+  @extend $margin
   font-family: var(--theme-font-medium)
   font-size: em(20.97)
   font-weight: 500
   line-height: 25/20.97
 
 .body-en
+  @extend $margin
   font-family: var(--theme-font)
   font-size: em(16.77)
   letter-spacing: 0.5px
   line-height: 28/16.77
 
 .body-to
+  @extend $margin
   font-family: var(--theme-font)
   color: var(--theme-text-color-brighter)
   font-size: em(14.68)
@@ -59,6 +70,7 @@ h6
   line-height: 20/14.68
 
 .subtitle-en
+  @extend $margin
   font-family: var(--theme-font)
   color: var(--theme-text-color-brighter)
   font-size: em(16.77)
@@ -67,6 +79,7 @@ h6
   
 
 .subtitle-to
+  @extend $margin
   font-family: var(--theme-font-medium)
   color: var(--theme-text-color-brighter)
   font-size: em(14.68)
@@ -75,6 +88,7 @@ h6
   line-height: 24/14.68
 
 .button
+  @extend $margin
   font-family: var(--theme-font-medium)
   font-size: em(14.68)
   font-weight: 500
@@ -83,6 +97,7 @@ h6
   text-transform: uppercase
 
 .caption
+  @extend $margin
   font-family: var(--theme-font)
   color: var(--theme-text-color-brighter)
   font-size: em(12.58)
@@ -90,6 +105,7 @@ h6
   line-height: 16/12.58
 
 .overline
+  @extend $margin
   font-family: var(--theme-font-medium)
   color: var(--theme-text-color-brighter)
   font-size: em(12.58)

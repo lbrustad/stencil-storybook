@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/html';
 
-storiesOf('Components/VnText', module)
+storiesOf('Components/Typografiskala/VnText', module)
   .add('Default', () => `<vn-text></vn-text>`)
   .add(
     'With Input',

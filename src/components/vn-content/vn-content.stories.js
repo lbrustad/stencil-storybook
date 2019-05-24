@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/html';
 
-storiesOf('Components/VnContent', module)
+storiesOf('Components/Typografiskala/VnContent', module)
     .add(
         'example',
         () => `<vn-content>
