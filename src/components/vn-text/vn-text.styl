@@ -1,0 +1,56 @@
+@import '../../globals/stylus-methods/index.styl'
+
+$defaults
+  color: var(--theme-text-color-brighter)
+  font-family: var(--theme-font)
+  font-size: em(14.68)
+  font-weight: 400
+
+.body-en
+  @extend $defaults
+  color var(--theme-text-color)
+  font-size: em(16.77)
+  letter-spacing: 0.5px
+  line-height: 28/16.77
+
+.body-to
+  @extend $defaults
+  letter-spacing: 0.25px
+  line-height: 20/14.68
+
+.subtitle-en
+  @extend $defaults
+  font-size: em(16.77)
+  letter-spacing: 0.15px
+  line-height: 24/16.77
+
+.subtitle-to
+  @extend $defaults
+  font-family: var(--theme-font-medium)
+  font-weight: 500
+  letter-spacing: 0.1px
+  line-height: 24/14.68
+
+.button
+  @extend $defaults
+  color var(--theme-text-color)
+  font-family: var(--theme-font-medium)
+  font-weight: 500
+  letter-spacing: 1.25px
+  line-height: 16/14.68
+  text-transform: uppercase
+
+.caption
+  @extend $defaults
+  font-size: em(12.58)
+  letter-spacing: 0.4px
+  line-height: 16/12.58
+
+.overline
+  @extend $defaults
+  font-family: var(--theme-font-medium)
+  font-size: em(12.58)
+  font-weight: 500
+  letter-spacing: 2px
+  line-height: 16/12.58
+  text-transform: uppercase

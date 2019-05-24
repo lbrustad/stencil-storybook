@@ -3,7 +3,6 @@ import { Component, Prop } from '@stencil/core';
 @Component({
   tag: 'vn-content-title',
   styleUrl: 'vn-content-title.styl',
-  shadow: true,
 })
 export class VnContentTitle {
   /**
@@ -14,12 +13,12 @@ export class VnContentTitle {
 
   render() {
     return <div class="title">
-    
-    
+
+
           <slot />
     </div>;
 
-  
-    
+
+
   }
 }

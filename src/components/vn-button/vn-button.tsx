@@ -3,7 +3,6 @@ import { Component, Prop } from "@stencil/core";
 @Component({
   tag: "vn-button",
   styleUrl: "vn-button.styl",
-  shadow: true
 })
 export class VnButton {
   /**

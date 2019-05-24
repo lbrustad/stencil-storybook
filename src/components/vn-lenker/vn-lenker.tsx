@@ -3,7 +3,6 @@ import { Component, Prop } from '@stencil/core';
 @Component({
   tag: 'vn-lenker',
   styleUrl: 'vn-lenker.css',
-  shadow: true,
 })
 export class VnLenker {
   /**
@@ -22,6 +21,6 @@ export class VnLenker {
         {halfString}
         <span class="underline">{restString}</span>
       </a>
-    ) 
+    )
   }
 }

@@ -3,7 +3,6 @@ import { Component, Prop } from '@stencil/core';
 @Component({
   tag: 'vn-color-block',
   styleUrl: 'vn-color-block.styl',
-  shadow: true,
 })
 export class VnColorBlock {
 

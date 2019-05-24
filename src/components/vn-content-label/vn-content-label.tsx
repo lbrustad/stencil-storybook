@@ -3,7 +3,6 @@ import { Component, Prop } from '@stencil/core';
 @Component({
   tag: 'vn-content-label',
   styleUrl: 'vn-content-label.styl',
-  shadow: false,
 })
 export class VnContentLabel {
   /**
