@@ -1,11 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'vn-size',
-  styleUrl: 'vn-size.styl',
+  tag: 'vn-header',
+  styleUrl: 'vn-header.styl',
   shadow: true,
 })
-export class VnSize {
+export class VnHeader {
   /**
    * A test prop
    */

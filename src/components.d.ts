@@ -12,33 +12,17 @@ import '@stencil/core';
 
 export namespace Components {
 
-  interface MyComponent {
+  interface MyBuild {
     /**
-    * The first name
+    * A test prop
     */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
+    'test': string;
   }
-  interface MyComponentAttributes extends StencilHTMLAttributes {
+  interface MyBuildAttributes extends StencilHTMLAttributes {
     /**
-    * The first name
+    * A test prop
     */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
+    'test'?: string;
   }
 
   interface VnButton {
@@ -120,6 +104,19 @@ export namespace Components {
     'test'?: string;
   }
 
+  interface VnHeader {
+    /**
+    * A test prop
+    */
+    'size': string;
+  }
+  interface VnHeaderAttributes extends StencilHTMLAttributes {
+    /**
+    * A test prop
+    */
+    'size'?: string;
+  }
+
   interface VnLenker {
     'hasHover': string;
     'href': string;
@@ -140,19 +137,6 @@ export namespace Components {
   interface VnSecondaryHeader {}
   interface VnSecondaryHeaderAttributes extends StencilHTMLAttributes {}
 
-  interface VnSize {
-    /**
-    * A test prop
-    */
-    'size': string;
-  }
-  interface VnSizeAttributes extends StencilHTMLAttributes {
-    /**
-    * A test prop
-    */
-    'size'?: string;
-  }
-
   interface VnText {
     /**
     * A test prop
@@ -169,36 +153,36 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
-    'MyComponent': Components.MyComponent;
+    'MyBuild': Components.MyBuild;
     'VnButton': Components.VnButton;
     'VnColorBlock': Components.VnColorBlock;
     'VnContentLabel': Components.VnContentLabel;
     'VnContentTitle': Components.VnContentTitle;
     'VnContent': Components.VnContent;
+    'VnHeader': Components.VnHeader;
     'VnLenker': Components.VnLenker;
     'VnSecondaryHeader': Components.VnSecondaryHeader;
-    'VnSize': Components.VnSize;
     'VnText': Components.VnText;
   }
 
   interface StencilIntrinsicElements {
-    'my-component': Components.MyComponentAttributes;
+    'my-build': Components.MyBuildAttributes;
     'vn-button': Components.VnButtonAttributes;
     'vn-color-block': Components.VnColorBlockAttributes;
     'vn-content-label': Components.VnContentLabelAttributes;
     'vn-content-title': Components.VnContentTitleAttributes;
     'vn-content': Components.VnContentAttributes;
+    'vn-header': Components.VnHeaderAttributes;
     'vn-lenker': Components.VnLenkerAttributes;
     'vn-secondary-header': Components.VnSecondaryHeaderAttributes;
-    'vn-size': Components.VnSizeAttributes;
     'vn-text': Components.VnTextAttributes;
   }
 
 
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  interface HTMLMyBuildElement extends Components.MyBuild, HTMLStencilElement {}
+  var HTMLMyBuildElement: {
+    prototype: HTMLMyBuildElement;
+    new (): HTMLMyBuildElement;
   };
 
   interface HTMLVnButtonElement extends Components.VnButton, HTMLStencilElement {}
@@ -231,6 +215,12 @@ declare global {
     new (): HTMLVnContentElement;
   };
 
+  interface HTMLVnHeaderElement extends Components.VnHeader, HTMLStencilElement {}
+  var HTMLVnHeaderElement: {
+    prototype: HTMLVnHeaderElement;
+    new (): HTMLVnHeaderElement;
+  };
+
   interface HTMLVnLenkerElement extends Components.VnLenker, HTMLStencilElement {}
   var HTMLVnLenkerElement: {
     prototype: HTMLVnLenkerElement;
@@ -243,12 +233,6 @@ declare global {
     new (): HTMLVnSecondaryHeaderElement;
   };
 
-  interface HTMLVnSizeElement extends Components.VnSize, HTMLStencilElement {}
-  var HTMLVnSizeElement: {
-    prototype: HTMLVnSizeElement;
-    new (): HTMLVnSizeElement;
-  };
-
   interface HTMLVnTextElement extends Components.VnText, HTMLStencilElement {}
   var HTMLVnTextElement: {
     prototype: HTMLVnTextElement;
@@ -256,28 +240,28 @@ declare global {
   };
 
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement
+    'my-build': HTMLMyBuildElement
     'vn-button': HTMLVnButtonElement
     'vn-color-block': HTMLVnColorBlockElement
     'vn-content-label': HTMLVnContentLabelElement
     'vn-content-title': HTMLVnContentTitleElement
     'vn-content': HTMLVnContentElement
+    'vn-header': HTMLVnHeaderElement
     'vn-lenker': HTMLVnLenkerElement
     'vn-secondary-header': HTMLVnSecondaryHeaderElement
-    'vn-size': HTMLVnSizeElement
     'vn-text': HTMLVnTextElement
   }
 
   interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'my-build': HTMLMyBuildElement;
     'vn-button': HTMLVnButtonElement;
     'vn-color-block': HTMLVnColorBlockElement;
     'vn-content-label': HTMLVnContentLabelElement;
     'vn-content-title': HTMLVnContentTitleElement;
     'vn-content': HTMLVnContentElement;
+    'vn-header': HTMLVnHeaderElement;
     'vn-lenker': HTMLVnLenkerElement;
     'vn-secondary-header': HTMLVnSecondaryHeaderElement;
-    'vn-size': HTMLVnSizeElement;
     'vn-text': HTMLVnTextElement;
   }
 
