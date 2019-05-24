@@ -12,6 +12,9 @@ import '@stencil/core';
 
 export namespace Components {
 
+  interface MyArticle {}
+  interface MyArticleAttributes extends StencilHTMLAttributes {}
+
   interface MyBuild {
     /**
     * A test prop
@@ -24,6 +27,9 @@ export namespace Components {
     */
     'test'?: string;
   }
+
+  interface MyStrammaOppArticle {}
+  interface MyStrammaOppArticleAttributes extends StencilHTMLAttributes {}
 
   interface VnButton {
     'bold': string;
@@ -90,14 +96,12 @@ export namespace Components {
   }
 
   interface VnContent {
-    'className': string;
     /**
     * A test prop
     */
     'test': string;
   }
   interface VnContentAttributes extends StencilHTMLAttributes {
-    'className'?: string;
     /**
     * A test prop
     */
@@ -153,7 +157,9 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
+    'MyArticle': Components.MyArticle;
     'MyBuild': Components.MyBuild;
+    'MyStrammaOppArticle': Components.MyStrammaOppArticle;
     'VnButton': Components.VnButton;
     'VnColorBlock': Components.VnColorBlock;
     'VnContentLabel': Components.VnContentLabel;
@@ -166,7 +172,9 @@ declare global {
   }
 
   interface StencilIntrinsicElements {
+    'my-article': Components.MyArticleAttributes;
     'my-build': Components.MyBuildAttributes;
+    'my-stramma-opp-article': Components.MyStrammaOppArticleAttributes;
     'vn-button': Components.VnButtonAttributes;
     'vn-color-block': Components.VnColorBlockAttributes;
     'vn-content-label': Components.VnContentLabelAttributes;
@@ -179,10 +187,22 @@ declare global {
   }
 
 
+  interface HTMLMyArticleElement extends Components.MyArticle, HTMLStencilElement {}
+  var HTMLMyArticleElement: {
+    prototype: HTMLMyArticleElement;
+    new (): HTMLMyArticleElement;
+  };
+
   interface HTMLMyBuildElement extends Components.MyBuild, HTMLStencilElement {}
   var HTMLMyBuildElement: {
     prototype: HTMLMyBuildElement;
     new (): HTMLMyBuildElement;
+  };
+
+  interface HTMLMyStrammaOppArticleElement extends Components.MyStrammaOppArticle, HTMLStencilElement {}
+  var HTMLMyStrammaOppArticleElement: {
+    prototype: HTMLMyStrammaOppArticleElement;
+    new (): HTMLMyStrammaOppArticleElement;
   };
 
   interface HTMLVnButtonElement extends Components.VnButton, HTMLStencilElement {}
@@ -240,7 +260,9 @@ declare global {
   };
 
   interface HTMLElementTagNameMap {
+    'my-article': HTMLMyArticleElement
     'my-build': HTMLMyBuildElement
+    'my-stramma-opp-article': HTMLMyStrammaOppArticleElement
     'vn-button': HTMLVnButtonElement
     'vn-color-block': HTMLVnColorBlockElement
     'vn-content-label': HTMLVnContentLabelElement
@@ -253,7 +275,9 @@ declare global {
   }
 
   interface ElementTagNameMap {
+    'my-article': HTMLMyArticleElement;
     'my-build': HTMLMyBuildElement;
+    'my-stramma-opp-article': HTMLMyStrammaOppArticleElement;
     'vn-button': HTMLVnButtonElement;
     'vn-color-block': HTMLVnColorBlockElement;
     'vn-content-label': HTMLVnContentLabelElement;

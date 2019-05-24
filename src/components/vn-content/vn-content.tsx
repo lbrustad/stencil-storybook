@@ -9,7 +9,7 @@ export class VnContent {
    * A test prop
    */
   @Prop() test: string = 'Hello World';
-  @Prop() className: string;
+  
 
   render() {
     return (

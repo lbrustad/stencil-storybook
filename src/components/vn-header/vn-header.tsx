@@ -16,7 +16,7 @@ export class VnHeader {
       return <h1><slot /></h1>
     }
     else if (this.size==="2") {
-      return <h2><slor /></h2>
+      return <h2><slot /></h2>
     }
     else if (this.size==="3") {
       return <h3><slot /></h3>
