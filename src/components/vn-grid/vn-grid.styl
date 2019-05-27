@@ -1,0 +1,10 @@
+@import '../../globals/stylus-methods/index.styl'
+
+.grid
+  display: grid
+  grid-template-columns: repeat(12, rem(68))
+  grid-gap rem(30)
+  max-width 1140px
+
+  &>*
+    border 1px dotted black

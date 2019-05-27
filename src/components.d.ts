@@ -108,6 +108,9 @@ export namespace Components {
     'test'?: string;
   }
 
+  interface VnGrid {}
+  interface VnGridAttributes extends StencilHTMLAttributes {}
+
   interface VnHeader {
     /**
     * A test prop
@@ -165,6 +168,7 @@ declare global {
     'VnContentLabel': Components.VnContentLabel;
     'VnContentTitle': Components.VnContentTitle;
     'VnContent': Components.VnContent;
+    'VnGrid': Components.VnGrid;
     'VnHeader': Components.VnHeader;
     'VnLenker': Components.VnLenker;
     'VnSecondaryHeader': Components.VnSecondaryHeader;
@@ -180,6 +184,7 @@ declare global {
     'vn-content-label': Components.VnContentLabelAttributes;
     'vn-content-title': Components.VnContentTitleAttributes;
     'vn-content': Components.VnContentAttributes;
+    'vn-grid': Components.VnGridAttributes;
     'vn-header': Components.VnHeaderAttributes;
     'vn-lenker': Components.VnLenkerAttributes;
     'vn-secondary-header': Components.VnSecondaryHeaderAttributes;
@@ -235,6 +240,12 @@ declare global {
     new (): HTMLVnContentElement;
   };
 
+  interface HTMLVnGridElement extends Components.VnGrid, HTMLStencilElement {}
+  var HTMLVnGridElement: {
+    prototype: HTMLVnGridElement;
+    new (): HTMLVnGridElement;
+  };
+
   interface HTMLVnHeaderElement extends Components.VnHeader, HTMLStencilElement {}
   var HTMLVnHeaderElement: {
     prototype: HTMLVnHeaderElement;
@@ -268,6 +279,7 @@ declare global {
     'vn-content-label': HTMLVnContentLabelElement
     'vn-content-title': HTMLVnContentTitleElement
     'vn-content': HTMLVnContentElement
+    'vn-grid': HTMLVnGridElement
     'vn-header': HTMLVnHeaderElement
     'vn-lenker': HTMLVnLenkerElement
     'vn-secondary-header': HTMLVnSecondaryHeaderElement
@@ -283,6 +295,7 @@ declare global {
     'vn-content-label': HTMLVnContentLabelElement;
     'vn-content-title': HTMLVnContentTitleElement;
     'vn-content': HTMLVnContentElement;
+    'vn-grid': HTMLVnGridElement;
     'vn-header': HTMLVnHeaderElement;
     'vn-lenker': HTMLVnLenkerElement;
     'vn-secondary-header': HTMLVnSecondaryHeaderElement;
