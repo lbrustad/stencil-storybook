@@ -2,9 +2,24 @@
 
 .grid
   display: grid
-  grid-template-columns: repeat(12, rem(68))
+  grid-template-columns: repeat(12, 1fr)
   grid-gap rem(30)
   max-width 1140px
+  margin: 0 auto;
 
   &>*
-    border 1px dotted black
+    border 1px dashed black
+    
+  .stor-boks
+    grid-area: 1/12
+  
+  >.header
+  >.footer
+    grid-column: span 12
+
+  >.content
+    grid-column: span 9
+
+  >.menu 
+    grid-column: span 3
+  
