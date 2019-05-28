@@ -11,7 +11,7 @@ import withAssets from './stencil';
 addDecorator(withAssets({
     // Add addtional key value pair assets.
     // The key is the id of the script or style tag
-    // 'random-readme-thing': addReadme
+    // addReadme
 }));
 
 // automatically import all files ending in *.stories.js

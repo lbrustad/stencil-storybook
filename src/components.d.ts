@@ -15,18 +15,8 @@ export namespace Components {
   interface MyArticle {}
   interface MyArticleAttributes extends StencilHTMLAttributes {}
 
-  interface MyBuild {
-    /**
-    * A test prop
-    */
-    'test': string;
-  }
-  interface MyBuildAttributes extends StencilHTMLAttributes {
-    /**
-    * A test prop
-    */
-    'test'?: string;
-  }
+  interface MyBuild {}
+  interface MyBuildAttributes extends StencilHTMLAttributes {}
 
   interface MyStrammaOppArticle {}
   interface MyStrammaOppArticleAttributes extends StencilHTMLAttributes {}
@@ -108,8 +98,12 @@ export namespace Components {
     'test'?: string;
   }
 
-  interface VnGrid {}
-  interface VnGridAttributes extends StencilHTMLAttributes {}
+  interface VnGrid {
+    'nums': string;
+  }
+  interface VnGridAttributes extends StencilHTMLAttributes {
+    'nums'?: string;
+  }
 
   interface VnHeader {
     /**
