@@ -1,18 +1,27 @@
+// imports
 @import '../../globals/stylus-methods/index.styl'
 
+// mixins
+pos($pos, $num, $span = false)
+  if $span
+    grid-column-{$pos}: span $num
+  else
+    grid-column-{$pos}: $num
+
+// CSS
 .grid
   display: grid
   grid-template-columns: repeat(12, 1fr)
-  grid-gap rem(30)
+  grid-gap 30px
   max-width 1140px
   margin: 0 auto;
 
-  &>*
-    border 1px dashed black
-    
+  // &>*
+  //   border 1px dashed black
+
   .stor-boks
     grid-area: 1/12
-  
+
   >.header
   >.footer
     grid-column: span 12
@@ -20,6 +29,17 @@
   >.content
     grid-column: span 9
 
-  >.menu 
+  >.menu
     grid-column: span 3
-  
+
+  for $s in 1..12
+    >.start-{$s}
+      pos(start, $s)
+    // >.start-{$s}-span
+    //   pos(start, $s, true)
+
+  for $e in 1..13
+    >.end-{$e}
+      pos(end, $e)
+    >.end-{$e}-span
+      pos(end, $e, true)
