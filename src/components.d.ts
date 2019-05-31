@@ -91,16 +91,10 @@ export namespace Components {
   }
 
   interface VnIcons {
-    /**
-    * A test prop
-    */
-    'test': string;
+    'vnType': string;
   }
   interface VnIconsAttributes extends StencilHTMLAttributes {
-    /**
-    * A test prop
-    */
-    'test'?: string;
+    'vnType'?: string;
   }
 
   interface VnLenker {

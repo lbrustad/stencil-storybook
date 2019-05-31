@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default         |
-| -------- | --------- | ----------- | -------- | --------------- |
-| `test`   | `test`    | A test prop | `string` | `'Hello World'` |
+| Property | Attribute | Description | Type     | Default |
+| -------- | --------- | ----------- | -------- | ------- |
+| `vnType` | `vn-type` |             | `string` | `"-"`   |
 
 
 ----------------------------------------------
