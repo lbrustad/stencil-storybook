@@ -5,12 +5,13 @@ import { Component, Prop } from '@stencil/core';
   styleUrl: 'template-component.styl',
 })
 export class TemplateComponent {
-  /**
-   * A test prop
-   */
-  @Prop() test: string = 'Hello World';
+  @Prop() props: string;
 
   render() {
-    return <div class="template-component">{this.test}</div>;
+    return (
+      <div class="template-component">
+        <slot />
+      </div>
+    );
   }
 }

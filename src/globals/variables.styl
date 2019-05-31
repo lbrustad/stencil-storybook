@@ -1,37 +1,42 @@
-/* Variable that can be manipulated by theme go into global scope */
+// Global variables
 
+// https://stenciljs.com/docs/config#globalstyle
 
-/* https://stenciljs.com/docs/config#globalstyle */
-
-/* font stuff */
+/* font-face */
 @import 'font-face.styl'
 
-/* CSS variables */
+/* variables */
 :root
-    // theme p1
+    // theme primary 1
     --theme-p1 #27777A
 
-    // theme p2
+    // theme primary 2
     --theme-p2 #50F6C1
     --theme-p2-15-opacity: rgba(80, 246, 193, 0.15)
 
-    // theme p3
+    // theme primary 3
     --theme-p3 #FBECCE
     --theme-p3-hover-border #ECBD60
 
-    // theme p4
-    --theme-p4-focus-shadow #EEB33C
+    // theme primary 4
+    --theme-p4-focus-shadow #EEB33C // denne blir endret på linje 25 til #27777A
     --theme-p4 #FFFFFF
     --theme-p4-focus-bg #FFFFFF
     --theme-p4-focus-shadow #27777A
 
-    // theme general
+    // theme fonts
     --theme-font "apercu"
     --theme-font-medium "apercu-medium"
     --theme-font-bold "apercu-bold"
     --theme-font-light "apercu-light"
+
+    // theme colors
     --theme-text-color rgba(0, 0, 0, 0.87)
-    --theme-text-color-brighter rgba(0,0,0,0.6);
+    --theme-text-color-brighter rgba(0,0,0,0.6)
+
+    // theme sizes
     --theme-padding 0
+
+    // grid only
+    --grid-columns 12
     --grid-max-width 1140px
-    
