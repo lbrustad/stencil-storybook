@@ -11,7 +11,7 @@
 | ------------------- | ----------- | ----------- | -------- | ----------- |
 | `hasHover`          | `has-hover` |             | `string` | `"false"`   |
 | `href`              | `href`      |             | `string` | `"#"`       |
-| `text` _(required)_ | `text`      | A test prop | `string` | `undefined` |
+| `text` _(required)_ | `text`      |             | `string` | `undefined` |
 
 
 ----------------------------------------------

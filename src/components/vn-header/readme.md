@@ -9,7 +9,7 @@
 
 | Property | Attribute | Description | Type     | Default     |
 | -------- | --------- | ----------- | -------- | ----------- |
-| `size`   | `size`    | A test prop | `string` | `undefined` |
+| `size`   | `size`    |             | `string` | `undefined` |
 
 
 ----------------------------------------------

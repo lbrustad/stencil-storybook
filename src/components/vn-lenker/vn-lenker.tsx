@@ -5,9 +5,6 @@ import { Component, Prop } from '@stencil/core';
   styleUrl: 'vn-lenker.css',
 })
 export class VnLenker {
-  /**
-   * A test prop
-   */
   @Prop() text!: string;
   @Prop() href: string = "#";
   @Prop() hasHover: string = "false";

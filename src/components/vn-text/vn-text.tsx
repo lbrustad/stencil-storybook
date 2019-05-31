@@ -5,9 +5,6 @@ import { Component, Prop } from '@stencil/core';
   styleUrl: 'vn-text.styl',
 })
 export class VnText {
-  /**
-   * A test prop
-   */
   @Prop() type: string = 'body-en';
 
   render() {

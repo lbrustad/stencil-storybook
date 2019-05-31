@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/html';
 
 let btns = {
     'Accordion (prioritetsguide)': `<vn-content-title>Accordion (prioritetsguide)</vn-content-title>`,
-    'Bilder': `<vn-content-title>Bilder</vn-content-title>`,   
+    'Bilder': `<vn-content-title>Bilder</vn-content-title>`,
     'Bilde med caption': `<vn-content-title>Bilde med caption</vn-content-title>`,
     'Core nav states': `<vn-content-title>Core nav states</vn-content-title>`,
     'Footer': `<vn-content-title>Footer</vn-content-title>`,
@@ -19,8 +19,7 @@ let btns = {
     'Sidebar': `<vn-content-title>Sidebar</vn-content-title>`,
     'Sitemap ': `<vn-content-title>Sitemap</vn-content-title>`,
     'Skjema': `<vn-content-title>Skjema</vn-content-title>`,
-    'Typografiskala': `<vn-content-title>Typografiskala</vn-content-title>`,
-           
+    'Typografiskala': `<vn-content-title>Typografiskala</vn-content-title>`
 };
 
 let arr = [];

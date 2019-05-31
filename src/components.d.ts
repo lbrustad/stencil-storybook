@@ -70,33 +70,11 @@ export namespace Components {
     'color'?: string;
   }
 
-  interface VnContentTitle {
-    /**
-    * A test prop
-    */
-    'test': string;
-    'title': string;
-  }
-  interface VnContentTitleAttributes extends StencilHTMLAttributes {
-    /**
-    * A test prop
-    */
-    'test'?: string;
-    'title'?: string;
-  }
+  interface VnContentTitle {}
+  interface VnContentTitleAttributes extends StencilHTMLAttributes {}
 
-  interface VnContent {
-    /**
-    * A test prop
-    */
-    'test': string;
-  }
-  interface VnContentAttributes extends StencilHTMLAttributes {
-    /**
-    * A test prop
-    */
-    'test'?: string;
-  }
+  interface VnContent {}
+  interface VnContentAttributes extends StencilHTMLAttributes {}
 
   interface VnGrid {
     'nums': string;
@@ -106,15 +84,9 @@ export namespace Components {
   }
 
   interface VnHeader {
-    /**
-    * A test prop
-    */
     'size': string;
   }
   interface VnHeaderAttributes extends StencilHTMLAttributes {
-    /**
-    * A test prop
-    */
     'size'?: string;
   }
 
@@ -134,17 +106,11 @@ export namespace Components {
   interface VnLenker {
     'hasHover': string;
     'href': string;
-    /**
-    * A test prop
-    */
     'text': string;
   }
   interface VnLenkerAttributes extends StencilHTMLAttributes {
     'hasHover'?: string;
     'href'?: string;
-    /**
-    * A test prop
-    */
     'text': string;
   }
 
@@ -152,15 +118,9 @@ export namespace Components {
   interface VnSecondaryHeaderAttributes extends StencilHTMLAttributes {}
 
   interface VnText {
-    /**
-    * A test prop
-    */
     'type': string;
   }
   interface VnTextAttributes extends StencilHTMLAttributes {
-    /**
-    * A test prop
-    */
     'type'?: string;
   }
 }

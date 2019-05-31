@@ -9,7 +9,7 @@
 
 | Property | Attribute | Description | Type     | Default     |
 | -------- | --------- | ----------- | -------- | ----------- |
-| `type`   | `type`    | A test prop | `string` | `'body-en'` |
+| `type`   | `type`    |             | `string` | `'body-en'` |
 
 
 ----------------------------------------------
