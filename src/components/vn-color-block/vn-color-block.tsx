@@ -21,12 +21,12 @@ export class VnColorBlock {
   render() {
     let classes: string[] = ['blc'];
     //let bg: number = parseInt(this.bg);
-    let p: number = this.validatePadding();
+    // let p: number = this.validatePadding();
     return (
       <div
         class={classes.join(' ')}
       >
-        <slot />{p}
+        <slot />
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/html';
 
 let btns = {
-    'Large label': '<vn-content-label box-size="large">Dette er en kjerneside</vn-content-label>',
+    'Large label': '<vn-content-label box-size="small">Dette er en kjerneside</vn-content-label>',
     'Small label': '<vn-content-label box-size="small">KJ</vn-content-label>'
 };
 

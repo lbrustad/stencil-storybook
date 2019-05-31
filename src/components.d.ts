@@ -118,6 +118,19 @@ export namespace Components {
     'size'?: string;
   }
 
+  interface VnIcons {
+    /**
+    * A test prop
+    */
+    'test': string;
+  }
+  interface VnIconsAttributes extends StencilHTMLAttributes {
+    /**
+    * A test prop
+    */
+    'test'?: string;
+  }
+
   interface VnLenker {
     'hasHover': string;
     'href': string;
@@ -164,6 +177,7 @@ declare global {
     'VnContent': Components.VnContent;
     'VnGrid': Components.VnGrid;
     'VnHeader': Components.VnHeader;
+    'VnIcons': Components.VnIcons;
     'VnLenker': Components.VnLenker;
     'VnSecondaryHeader': Components.VnSecondaryHeader;
     'VnText': Components.VnText;
@@ -180,6 +194,7 @@ declare global {
     'vn-content': Components.VnContentAttributes;
     'vn-grid': Components.VnGridAttributes;
     'vn-header': Components.VnHeaderAttributes;
+    'vn-icons': Components.VnIconsAttributes;
     'vn-lenker': Components.VnLenkerAttributes;
     'vn-secondary-header': Components.VnSecondaryHeaderAttributes;
     'vn-text': Components.VnTextAttributes;
@@ -246,6 +261,12 @@ declare global {
     new (): HTMLVnHeaderElement;
   };
 
+  interface HTMLVnIconsElement extends Components.VnIcons, HTMLStencilElement {}
+  var HTMLVnIconsElement: {
+    prototype: HTMLVnIconsElement;
+    new (): HTMLVnIconsElement;
+  };
+
   interface HTMLVnLenkerElement extends Components.VnLenker, HTMLStencilElement {}
   var HTMLVnLenkerElement: {
     prototype: HTMLVnLenkerElement;
@@ -275,6 +296,7 @@ declare global {
     'vn-content': HTMLVnContentElement
     'vn-grid': HTMLVnGridElement
     'vn-header': HTMLVnHeaderElement
+    'vn-icons': HTMLVnIconsElement
     'vn-lenker': HTMLVnLenkerElement
     'vn-secondary-header': HTMLVnSecondaryHeaderElement
     'vn-text': HTMLVnTextElement
@@ -291,6 +313,7 @@ declare global {
     'vn-content': HTMLVnContentElement;
     'vn-grid': HTMLVnGridElement;
     'vn-header': HTMLVnHeaderElement;
+    'vn-icons': HTMLVnIconsElement;
     'vn-lenker': HTMLVnLenkerElement;
     'vn-secondary-header': HTMLVnSecondaryHeaderElement;
     'vn-text': HTMLVnTextElement;
