@@ -77,10 +77,14 @@ export namespace Components {
   interface VnContentAttributes extends StencilHTMLAttributes {}
 
   interface VnGrid {
-    'nums': string;
+    'end': string;
+    'span': string;
+    'start': string;
   }
   interface VnGridAttributes extends StencilHTMLAttributes {
-    'nums'?: string;
+    'end'?: string;
+    'span'?: string;
+    'start'?: string;
   }
 
   interface VnHeader {

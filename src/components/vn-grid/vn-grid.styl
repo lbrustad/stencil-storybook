@@ -2,7 +2,7 @@
 @import '../../globals/stylus-methods/index.styl'
 
 // variables
-$lines = 10
+$lines = 20
 
 // mixins
 pos($pos, $num, $span = false)
@@ -14,10 +14,10 @@ pos($pos, $num, $span = false)
 // CSS
 .grid
   display: grid
-  grid-template-columns: repeat(12, 1fr)
+  grid-template-columns: repeat(var(--grid-columns), 1fr)
   grid-template-rows: repeat($lines, minmax(1rem, auto))
   grid-gap 30px
-  max-width 1140px
+  max-width var(--grid-max-width)
   margin: 0 auto;
 
   &>*

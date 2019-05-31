@@ -9,7 +9,9 @@
 
 | Property | Attribute | Description | Type     | Default     |
 | -------- | --------- | ----------- | -------- | ----------- |
-| `nums`   | `nums`    |             | `string` | `undefined` |
+| `end`    | `end`     |             | `string` | `undefined` |
+| `span`   | `span`    |             | `string` | `undefined` |
+| `start`  | `start`   |             | `string` | `undefined` |
 
 
 ----------------------------------------------
