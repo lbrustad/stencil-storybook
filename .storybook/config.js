@@ -2,7 +2,7 @@ import { configure, addDecorator } from '@storybook/html';
 import withAssets from './stencil';
 
 // addons
-// import { addReadme } from 'storybook-readme/html';
+import { addReadme } from 'storybook-readme/html';
 
 /**
  * Add custom with assets decorator
@@ -11,8 +11,9 @@ import withAssets from './stencil';
 addDecorator(withAssets({
     // Add addtional key value pair assets.
     // The key is the id of the script or style tag
-    // addReadme
 }));
+
+addDecorator(addReadme);
 
 // automatically import all files ending in *.stories.js
 const reqSrcStories = require.context('../src', true, /.stories.js$/);
