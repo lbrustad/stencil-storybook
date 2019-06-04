@@ -3,7 +3,6 @@ import { Component, Prop } from '@stencil/core';
 @Component({
   tag: 'vn-header',
   styleUrl: 'vn-header.styl',
-  shadow: true,
 })
 export class VnHeader {
   @Prop() size: string;

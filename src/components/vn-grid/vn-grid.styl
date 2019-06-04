@@ -23,18 +23,37 @@ pos($pos, $num, $span = false)
   &>*
     border 1px dashed black
 
-  for $s in 1..12
-    >.start-{$s}
-      pos(start, $s)
-    // >.start-{$s}-span
-    //   pos(start, $s, true)
+  >[content-left]
+    grid-column-start: 1
+    grid-column-end span 8
 
-  for $e in 0..12
-    >.end-{$e+1}
-      pos(end, $e)
-    >.end-{$e+1}-span
-      pos(end, $e, true)
+  >[content-right]
+    grid-column-start: 5
+    grid-column-end span 8
 
-  for $l in 1..$lines
-    >.line-{$l}
-      grid-row-start: $l
+  >[content-item]
+    grid-column span 8
+
+  >[nav-left]
+    grid-column-start: 1
+    grid-column-end: span 4
+
+  >[nav-right]
+    grid-column-start: 9
+    grid-column-end: span 4
+
+  >[nav-item]
+    grid-column span 4
+
+  for $x in 1..13
+    >[grid-start-{$x}]
+      grid-column-start: $x
+
+      &[grid-start-span]
+        grid-column-start: span $x
+
+    >[grid-end-{$x}]
+      grid-column-end: $x
+
+      &[grid-end-span]
+        grid-column-end: span $x

@@ -76,16 +76,8 @@ export namespace Components {
   interface VnContent {}
   interface VnContentAttributes extends StencilHTMLAttributes {}
 
-  interface VnGrid {
-    'end': string;
-    'span': string;
-    'start': string;
-  }
-  interface VnGridAttributes extends StencilHTMLAttributes {
-    'end'?: string;
-    'span'?: string;
-    'start'?: string;
-  }
+  interface VnGrid {}
+  interface VnGridAttributes extends StencilHTMLAttributes {}
 
   interface VnHeader {
     'size': string;

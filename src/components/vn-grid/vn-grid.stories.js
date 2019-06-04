@@ -9,7 +9,7 @@ const params = {
 }
 
 let btns = {
-    'Grid test': '<vn-grid start="1, 4, 7"><vn-content><h1>Overskrift</h1></vn-content></vn-grid>'
+    'Grid test': '<vn-grid><vn-content grid-start-4 grid-end-5 grid-end-span><h1>Overskrift</h1></vn-content></vn-grid>'
 };
 
 let arr = [];
