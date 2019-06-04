@@ -8,62 +8,14 @@ const params = {
     }
 }
 
-storiesOf('Components/MyBuild', module)
-    .addParameters(params)
+const stories = storiesOf('Components/MyBuild', module).addParameters(params);
 
-.add('Test build', () => `
-  <my-build>
-    <vn-grid>
+const importAll = r => r.keys();
+const context = require.context('./html', true, /\.html$/i);
 
-      <vn-content grid-start-1 grid-end-12 grid-end-span>
-        <vn-header size="3">Dette er en overskrift</vn-header>
-      </vn-content>
-
-      <vn-content nav-left>
-        <vn-button color="p4" box-size="large">
-          <h4>start 1</h4>
-        </vn-button>
-        <br />
-        <vn-button color="p4" box-size="large">
-          <h4>start 2</h4>
-        </vn-button>
-      </vn-content>
-
-      <vn-content content-right>
-        <p class="body-en">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-      </vn-content>
-
-      <vn-content content-right>
-        <p class="body-en">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-      </vn-content>
-
-      <vn-content content-left>
-        <p class="body-en">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-      </vn-content>
-
-      <vn-content nav-right>
-        <vn-button color="p4" box-size="large">
-          <h4>start 1</h4>
-        </vn-button>
-        <br />
-        <vn-button color="p4" box-size="large">
-          <h4>start 2</h4>
-        </vn-button>
-      </vn-content>
-
-      <vn-content nav-right>
-        <vn-button color="p4" box-size="large">
-          <h4>start 1</h4>
-        </vn-button>
-        <br />
-        <vn-button color="p4" box-size="large">
-          <h4>start 2</h4>
-        </vn-button>
-      </vn-content>
-
-      <vn-content grid-start-1 grid-end-12 grid-end-span>
-        <vn-header size="5">Dette er en footer</vn-header>
-      </vn-content>
-    </vn-grid>
-  </my-build>
-`);
+for (const file of importAll(context)) {
+    console.log(file);
+    const name = file.replace(/^\.\/|\.html$/ig, '');
+    const content = require(`./html/${name}.html`);
+    stories.add(name, () => content);
+}

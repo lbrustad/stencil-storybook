@@ -2,7 +2,7 @@
 @import '../../globals/stylus-methods/index.styl'
 
 // variables
-$lines = 20
+$lines = 5
 
 // mixins
 pos($pos, $num, $span = false)
@@ -19,6 +19,7 @@ pos($pos, $num, $span = false)
   grid-gap 30px
   max-width var(--grid-max-width)
   margin: 0 auto;
+  border 1px solid black
 
   &>*
     border 1px dashed black
