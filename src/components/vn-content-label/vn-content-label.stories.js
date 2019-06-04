@@ -1,4 +1,12 @@
 import { storiesOf } from '@storybook/html';
+import Readme from './readme.md';
+
+const params = {
+    readme: {
+        content: Readme,
+        sidebar: Readme
+    }
+}
 
 let btns = {
     'Large label': '<vn-content-label box-size="small">Dette er en kjerneside</vn-content-label>',
@@ -11,6 +19,7 @@ for (let key in btns) {
 }
 
 const stories = storiesOf('Components/Ikoner, knapper & labels/VnContentLabel', module)
+    .addParameters(params)
     .add(
         'All Items',
         () => arr.join('<br /><br /><br />')

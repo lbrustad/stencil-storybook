@@ -1,4 +1,12 @@
 import { storiesOf } from '@storybook/html';
+import Readme from './readme.md';
+
+const params = {
+    readme: {
+        content: Readme,
+        sidebar: Readme
+    }
+}
 
 let btns = {
     'Accordion (prioritetsguide)': `<vn-content-title>Accordion (prioritetsguide)</vn-content-title>`,
@@ -28,6 +36,7 @@ for (let key in btns) {
 }
 
 const stories = storiesOf('Components/VnContentTitle', module)
+    .addParameters(params)
     .add(
         'All Items',
         () => arr.join('<br />')

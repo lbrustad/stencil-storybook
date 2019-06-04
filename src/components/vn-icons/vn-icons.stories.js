@@ -1,4 +1,12 @@
 import { storiesOf } from '@storybook/html';
+import Readme from './readme.md';
+
+const params = {
+    readme: {
+        content: Readme,
+        sidebar: Readme
+    }
+}
 
 let btns = {
     'Kryss': '<vn-icons vn-type="x"></vn-icons>',
@@ -12,6 +20,7 @@ for (let key in btns) {
 }
 
 const stories = storiesOf('Components/VnIcons', module)
+    .addParameters(params)
     .add(
         'All Items',
         () => arr.join('<br /><br /><br />')

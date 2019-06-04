@@ -1,6 +1,15 @@
 import { storiesOf } from '@storybook/html';
+import Readme from './readme.md';
+
+const params = {
+    readme: {
+        content: Readme,
+        sidebar: Readme
+    }
+}
 
 storiesOf('Components/MyBuild', module)
+    .addParameters(params)
 
 .add('Test build', () => `
   <my-build>

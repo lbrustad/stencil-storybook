@@ -6,10 +6,6 @@ import { Component } from '@stencil/core';
 })
 export class VnContent {
   render() {
-    return (
-      <div class="content">
-        <slot />
-      </div>
-    );
+    return <slot />;
   }
 }

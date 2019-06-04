@@ -1,5 +1,12 @@
 import { storiesOf } from '@storybook/html';
-//import ButtonReadme from './readme.md';
+import Readme from './readme.md';
+
+const params = {
+    readme: {
+        content: Readme,
+        sidebar: Readme
+    }
+}
 
 let btns = {
     'Large button': '<vn-button box-size="large">Vis formål</vn-button>',
@@ -12,6 +19,7 @@ for (let key in btns) {
 }
 
 const stories = storiesOf('Components/Ikoner, knapper & labels/VnButton', module)
+    .addParameters(params)
     .add(
         'All Items',
         () => arr.join('<br /><br /><br />')

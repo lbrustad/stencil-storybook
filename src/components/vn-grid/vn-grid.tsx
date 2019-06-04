@@ -11,13 +11,12 @@ export class VnGrid {
 
   /* "1 2 3"/"1,2,3"/"1 , 2,3" => number[1, 2, 3] */
   private getNumberArray(from: string = "") {
-    if (from.length <= 1) return [];
+    if (from.length <= 0) return [];
     const array: number[] = [];
     for (const val of from.replace(/[^\d,\s]+/g, '').split(/\s*,\s*|\s+/)) {
-      console.log(val, parseInt(val));
-      const num = parseInt(val);
-      array.push(num);
+      array.push(parseInt(val));
     }
+    console.log(array);
     return array;
   }
 

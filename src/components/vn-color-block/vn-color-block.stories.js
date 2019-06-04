@@ -1,4 +1,12 @@
 import { storiesOf } from '@storybook/html';
+import Readme from './readme.md';
+
+const params = {
+    readme: {
+        content: Readme,
+        sidebar: Readme
+    }
+}
 
 let btns = {
     'Primary 1': '<vn-color-block>p1</vn-color-block>',
@@ -19,6 +27,7 @@ for (let key in btns) {
 }
 
 const stories = storiesOf('Components/VnColorBlock', module)
+    .addParameters(params)
     .add(
         'All Items',
         () => arr.join('<br />')
