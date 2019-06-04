@@ -101,6 +101,15 @@ export namespace Components {
     'vnType'?: string;
   }
 
+  interface VnInput {
+    'label': string;
+    'placeholder': string;
+  }
+  interface VnInputAttributes extends StencilHTMLAttributes {
+    'label'?: string;
+    'placeholder'?: string;
+  }
+
   interface VnLenker {
     'hasHover': string;
     'href': string;
@@ -136,6 +145,7 @@ declare global {
     'VnGrid': Components.VnGrid;
     'VnHeader': Components.VnHeader;
     'VnIcons': Components.VnIcons;
+    'VnInput': Components.VnInput;
     'VnLenker': Components.VnLenker;
     'VnSecondaryHeader': Components.VnSecondaryHeader;
     'VnText': Components.VnText;
@@ -153,6 +163,7 @@ declare global {
     'vn-grid': Components.VnGridAttributes;
     'vn-header': Components.VnHeaderAttributes;
     'vn-icons': Components.VnIconsAttributes;
+    'vn-input': Components.VnInputAttributes;
     'vn-lenker': Components.VnLenkerAttributes;
     'vn-secondary-header': Components.VnSecondaryHeaderAttributes;
     'vn-text': Components.VnTextAttributes;
@@ -225,6 +236,12 @@ declare global {
     new (): HTMLVnIconsElement;
   };
 
+  interface HTMLVnInputElement extends Components.VnInput, HTMLStencilElement {}
+  var HTMLVnInputElement: {
+    prototype: HTMLVnInputElement;
+    new (): HTMLVnInputElement;
+  };
+
   interface HTMLVnLenkerElement extends Components.VnLenker, HTMLStencilElement {}
   var HTMLVnLenkerElement: {
     prototype: HTMLVnLenkerElement;
@@ -255,6 +272,7 @@ declare global {
     'vn-grid': HTMLVnGridElement
     'vn-header': HTMLVnHeaderElement
     'vn-icons': HTMLVnIconsElement
+    'vn-input': HTMLVnInputElement
     'vn-lenker': HTMLVnLenkerElement
     'vn-secondary-header': HTMLVnSecondaryHeaderElement
     'vn-text': HTMLVnTextElement
@@ -272,6 +290,7 @@ declare global {
     'vn-grid': HTMLVnGridElement;
     'vn-header': HTMLVnHeaderElement;
     'vn-icons': HTMLVnIconsElement;
+    'vn-input': HTMLVnInputElement;
     'vn-lenker': HTMLVnLenkerElement;
     'vn-secondary-header': HTMLVnSecondaryHeaderElement;
     'vn-text': HTMLVnTextElement;
