@@ -1,0 +1,43 @@
+.radio {
+  cursor: pointer;
+}
+
+.radio>:first-child {
+  float: left;
+}
+/* 
+.radio>:last-child::before {
+  white-space: pre;
+  content: '\A'
+} */
+
+input {
+  outline: none;
+  margin: 15px 0;
+}
+
+input[type="radio"] {
+  background-color: white;
+  border: 2px solid var(--theme-p1);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  -webkit-appearance: none;
+}
+
+input[type="radio"]:after {
+  background-color: var(--theme-p1);
+  border-radius: 50%;
+  content: '';
+  display: hidden; 
+  height: 14px;
+  width: 14px;
+  position: relative;
+}
+
+input[type="radio"]:checked:after {
+  display: block;
+  margin: 3px;
+}

@@ -40,6 +40,13 @@ export namespace Components {
     'href'?: string;
   }
 
+  interface VnCheckbox {
+    'props': string;
+  }
+  interface VnCheckboxAttributes extends StencilHTMLAttributes {
+    'props'?: string;
+  }
+
   interface VnColorBlock {
     'bg': string;
     'p': string;
@@ -113,6 +120,15 @@ export namespace Components {
     'text': string;
   }
 
+  interface VnRadio {
+    'name': string;
+    'props': string;
+  }
+  interface VnRadioAttributes extends StencilHTMLAttributes {
+    'name'?: string;
+    'props'?: string;
+  }
+
   interface VnSecondaryHeader {}
   interface VnSecondaryHeaderAttributes extends StencilHTMLAttributes {}
 
@@ -130,6 +146,7 @@ declare global {
     'MyBuild': Components.MyBuild;
     'MyStrammaOppArticle': Components.MyStrammaOppArticle;
     'VnButton': Components.VnButton;
+    'VnCheckbox': Components.VnCheckbox;
     'VnColorBlock': Components.VnColorBlock;
     'VnContentLabel': Components.VnContentLabel;
     'VnContentTitle': Components.VnContentTitle;
@@ -139,6 +156,7 @@ declare global {
     'VnIcons': Components.VnIcons;
     'VnInput': Components.VnInput;
     'VnLenker': Components.VnLenker;
+    'VnRadio': Components.VnRadio;
     'VnSecondaryHeader': Components.VnSecondaryHeader;
     'VnText': Components.VnText;
   }
@@ -148,6 +166,7 @@ declare global {
     'my-build': Components.MyBuildAttributes;
     'my-stramma-opp-article': Components.MyStrammaOppArticleAttributes;
     'vn-button': Components.VnButtonAttributes;
+    'vn-checkbox': Components.VnCheckboxAttributes;
     'vn-color-block': Components.VnColorBlockAttributes;
     'vn-content-label': Components.VnContentLabelAttributes;
     'vn-content-title': Components.VnContentTitleAttributes;
@@ -157,6 +176,7 @@ declare global {
     'vn-icons': Components.VnIconsAttributes;
     'vn-input': Components.VnInputAttributes;
     'vn-lenker': Components.VnLenkerAttributes;
+    'vn-radio': Components.VnRadioAttributes;
     'vn-secondary-header': Components.VnSecondaryHeaderAttributes;
     'vn-text': Components.VnTextAttributes;
   }
@@ -184,6 +204,12 @@ declare global {
   var HTMLVnButtonElement: {
     prototype: HTMLVnButtonElement;
     new (): HTMLVnButtonElement;
+  };
+
+  interface HTMLVnCheckboxElement extends Components.VnCheckbox, HTMLStencilElement {}
+  var HTMLVnCheckboxElement: {
+    prototype: HTMLVnCheckboxElement;
+    new (): HTMLVnCheckboxElement;
   };
 
   interface HTMLVnColorBlockElement extends Components.VnColorBlock, HTMLStencilElement {}
@@ -240,6 +266,12 @@ declare global {
     new (): HTMLVnLenkerElement;
   };
 
+  interface HTMLVnRadioElement extends Components.VnRadio, HTMLStencilElement {}
+  var HTMLVnRadioElement: {
+    prototype: HTMLVnRadioElement;
+    new (): HTMLVnRadioElement;
+  };
+
   interface HTMLVnSecondaryHeaderElement extends Components.VnSecondaryHeader, HTMLStencilElement {}
   var HTMLVnSecondaryHeaderElement: {
     prototype: HTMLVnSecondaryHeaderElement;
@@ -257,6 +289,7 @@ declare global {
     'my-build': HTMLMyBuildElement
     'my-stramma-opp-article': HTMLMyStrammaOppArticleElement
     'vn-button': HTMLVnButtonElement
+    'vn-checkbox': HTMLVnCheckboxElement
     'vn-color-block': HTMLVnColorBlockElement
     'vn-content-label': HTMLVnContentLabelElement
     'vn-content-title': HTMLVnContentTitleElement
@@ -266,6 +299,7 @@ declare global {
     'vn-icons': HTMLVnIconsElement
     'vn-input': HTMLVnInputElement
     'vn-lenker': HTMLVnLenkerElement
+    'vn-radio': HTMLVnRadioElement
     'vn-secondary-header': HTMLVnSecondaryHeaderElement
     'vn-text': HTMLVnTextElement
   }
@@ -275,6 +309,7 @@ declare global {
     'my-build': HTMLMyBuildElement;
     'my-stramma-opp-article': HTMLMyStrammaOppArticleElement;
     'vn-button': HTMLVnButtonElement;
+    'vn-checkbox': HTMLVnCheckboxElement;
     'vn-color-block': HTMLVnColorBlockElement;
     'vn-content-label': HTMLVnContentLabelElement;
     'vn-content-title': HTMLVnContentTitleElement;
@@ -284,6 +319,7 @@ declare global {
     'vn-icons': HTMLVnIconsElement;
     'vn-input': HTMLVnInputElement;
     'vn-lenker': HTMLVnLenkerElement;
+    'vn-radio': HTMLVnRadioElement;
     'vn-secondary-header': HTMLVnSecondaryHeaderElement;
     'vn-text': HTMLVnTextElement;
   }
