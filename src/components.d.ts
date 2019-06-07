@@ -41,10 +41,12 @@ export namespace Components {
   }
 
   interface VnCheckbox {
-    'props': string;
+    'color': string;
+    'name': string;
   }
   interface VnCheckboxAttributes extends StencilHTMLAttributes {
-    'props'?: string;
+    'color'?: string;
+    'name'?: string;
   }
 
   interface VnColorBlock {
@@ -121,12 +123,12 @@ export namespace Components {
   }
 
   interface VnRadio {
+    'color': string;
     'name': string;
-    'props': string;
   }
   interface VnRadioAttributes extends StencilHTMLAttributes {
+    'color'?: string;
     'name'?: string;
-    'props'?: string;
   }
 
   interface VnSecondaryHeader {}

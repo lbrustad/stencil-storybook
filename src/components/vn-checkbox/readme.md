@@ -7,9 +7,10 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `props`  | `props`   |             | `string` | `undefined` |
+| Property | Attribute | Description | Type     | Default      |
+| -------- | --------- | ----------- | -------- | ------------ |
+| `color`  | `color`   |             | `string` | `undefined`  |
+| `name`   | `name`    |             | `string` | `"checkbox"` |
 
 
 ----------------------------------------------

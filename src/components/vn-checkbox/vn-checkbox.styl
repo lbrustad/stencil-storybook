@@ -1,6 +1,55 @@
-// Stylus er aktivert her
-
-// imports
 @import '../../globals/stylus-methods/index.styl'
 
-// Dette er til en vn-checkbox komponent
+.checkbox 
+    cursor: pointer;
+    margin: 0
+    border: 1px solid red
+
+input 
+    outline: none;
+
+svg 
+    width: 20px;
+    height: 18px;
+    position absolute
+    top 9px
+    left 10px
+    fill: none
+    border: 1px solid red
+
+
+input[type="checkbox"] 
+    background-color: white
+    border: 2px solid var(--theme-p1)
+    border-radius: 2px
+    cursor: pointer
+    position: relative
+    width: em(24)
+    height: em(24)
+    -webkit-appearance: none;
+    
+
+    &:checked
+        background-color: var(--theme-p1)
+        
+        + svg
+            fill: var(--theme-p4);
+
+// input[type="checkbox"]:after
+//     background-color: var(--theme-p1)
+//     border-radius: 0%
+//     content: ""
+//     display: hidden 
+//     height: 100%
+//     width: 100%
+    
+
+// input[type="checkbox"]:checked:after
+//     display: block
+
+
+
+
+    
+
+

@@ -5,12 +5,12 @@ import { Component, Prop } from '@stencil/core';
   styleUrl: 'vn-radio.css',
 })
 export class VnRadio {
-  @Prop() props: string;
+  @Prop() color: string;
   @Prop() name: string = "radio";
 
   render() {
     return (
-      <label class="radio">
+      <label class={"radio" + (this.color == 'grey' ? ' grey' : '')}>
         <input type="radio" name={this.name} />
         <span><slot /></span>
       </label>

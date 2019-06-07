@@ -9,8 +9,8 @@
 
 | Property | Attribute | Description | Type     | Default     |
 | -------- | --------- | ----------- | -------- | ----------- |
+| `color`  | `color`   |             | `string` | `undefined` |
 | `name`   | `name`    |             | `string` | `"radio"`   |
-| `props`  | `props`   |             | `string` | `undefined` |
 
 
 ----------------------------------------------

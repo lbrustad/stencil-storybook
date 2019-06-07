@@ -9,7 +9,8 @@ const params = {
 }
 
 let btns = {
-    'vn-radio': '<vn-radio></vn-radio>'
+    'Default': '<vn-radio></vn-radio> ',
+    'Grey': '<vn-radio color="grey"></vn-radio>',
 };
 
 let arr = [];

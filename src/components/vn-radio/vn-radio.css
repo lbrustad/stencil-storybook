@@ -41,3 +41,11 @@ input[type="radio"]:checked:after {
   display: block;
   margin: 3px;
 }
+
+.grey>input[type="radio"] {
+  border-color: var(--theme-radio-color)
+} 
+
+.grey>input[type="radio"]:after {
+  background-color: var(--theme-radio-color)
+}

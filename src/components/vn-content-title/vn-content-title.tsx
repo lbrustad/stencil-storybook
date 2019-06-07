@@ -4,10 +4,10 @@ import { Component } from '@stencil/core';
   tag: 'vn-content-title',
   styleUrl: 'vn-content-title.styl',
 })
+
 export class VnContentTitle {
   render() {
-    return <div class="title">
-          <slot />
-    </div>;
+    return <vn-header class="title" size="1"><slot /></vn-header>
+     
   }
 }
