@@ -2,7 +2,8 @@ import { Component, Prop } from '@stencil/core';
 
 @Component({
   tag: 'vn-radio',
-  styleUrl: 'vn-radio.css',
+  styleUrls: ['vn-radio.css'],
+  shadow: false
 })
 export class VnRadio {
   @Prop() color: string;

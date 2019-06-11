@@ -26,6 +26,7 @@
     "post:build": "node ./stencil-utilities/post-build.js"
   },
   "dependencies": {
+    "stencil-inline-svg": "0.0.2",
     "stencil-styled-components": "^1.3.5"
   },
   "devDependencies": {
