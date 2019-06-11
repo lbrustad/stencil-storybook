@@ -3,22 +3,28 @@
 .checkbox 
     cursor: pointer;
     margin: 0
-    border: 1px solid red
+    // border: 1px solid red
+    position: relative
 
 input 
     outline: none;
-
-svg 
+    background: url(../images/checkmark.svg);
+    
+img
+svg
+    display: inline-block
     width: 20px;
     height: 18px;
     position absolute
-    top 9px
-    left 10px
-    fill: none
-    border: 1px solid red
+    top -0px
+    left -1.5px
+    fill: red
+    // border: 1px solid red
 
 
 input[type="checkbox"] 
+    top 7.5px
+    left -5px
     background-color: white
     border: 2px solid var(--theme-p1)
     border-radius: 2px
@@ -32,24 +38,13 @@ input[type="checkbox"]
     &:checked
         background-color: var(--theme-p1)
         
-        + svg
+        & + svg
             fill: var(--theme-p4);
 
-// input[type="checkbox"]:after
-//     background-color: var(--theme-p1)
-//     border-radius: 0%
-//     content: ""
-//     display: hidden 
-//     height: 100%
-//     width: 100%
-    
 
-// input[type="checkbox"]:checked:after
-//     display: block
+.grey input[type="checkbox"]
+    border-color: var(--theme-radio-color);
 
-
-
-
-    
-
-
+    &:checked
+        background: var(--theme-radio-color)
+        

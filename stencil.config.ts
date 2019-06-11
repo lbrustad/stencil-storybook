@@ -90,7 +90,8 @@ export const config: Config = {
   ],
   globalStyle: 'src/globals/variables.styl',
   copy: [
-    { src: 'fonts' }
+    { src: 'fonts' },
+    { src: 'images' }
   ],
   plugins: [
     stylus()

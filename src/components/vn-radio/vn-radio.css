@@ -5,11 +5,6 @@
 .radio>:first-child {
   float: left;
 }
-/* 
-.radio>:last-child::before {
-  white-space: pre;
-  content: '\A'
-} */
 
 input {
   outline: none;

@@ -9,7 +9,7 @@ const params = {
 }
 
 let btns = {
-    'vn-checkbox': '<vn-checkbox><vn-header size="1"></vn-header></vn-checkbox>'
+    'vn-checkbox': '<vn-checkbox>Checkbox</vn-checkbox>'
 };
 
 let arr = [];
