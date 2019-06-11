@@ -9,7 +9,8 @@ const params = {
 }
 
 let btns = {
-    'vn-checkbox': '<vn-checkbox>Checkbox</vn-checkbox>'
+    'vn-checkbox /w color': '<vn-checkbox>Checkbox with color</vn-checkbox>',
+    'vn-checkbox w/o color': '<vn-checkbox color="grey">Checkbox withouth color</vn-checkbox>'
 };
 
 let arr = [];
